@@ -1,0 +1,45 @@
+<html>
+<head>
+	<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="charms"></div>
+
+<div>
+	<iframe id="iframeData" src="data.html" style="display:none"></iframe>
+</div>
+
+<script>
+	const charmsElement = document.querySelector('#charms');
+	
+	let lastUpdateTime;
+
+	window.addEventListener('message', (event) => {
+		const data = event.data;
+
+		if (lastUpdateTime === data.lastUpdateTime) {
+			return;
+		}
+
+		lastUpdateTime = data.lastUpdateTime;
+		
+		charmsElement.innerHTML = '';
+		
+		data.charms.forEach(charm => {
+			const charmElement = document.createElement('div');
+			charmElement.classList.add('charm');
+			charmElement.setAttribute("style", `background: url(./images/charm${charm}.png) center no-repeat;`);
+			charmsElement.appendChild(charmElement);
+		});
+	});
+
+	const iframe = document.querySelector('#iframeData');
+
+	const interval = setInterval(() => {
+		iframe.src = iframe.src;
+	}, 1000);
+
+</script>
+</body>
+</html>
