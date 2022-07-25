@@ -11,6 +11,7 @@ namespace AllCharms {
         }
         private void CharmUpdate(PlayerData pd, HeroController hc) {
             try {
+                Log(PlayerData.instance.equippedCharms);
                 Charms_.massageCharmList(PlayerData.instance.equippedCharms);
             } catch(Exception Ex) {
                 Log(Ex.ToString());
