@@ -3,8 +3,8 @@
 This mod adds support to create an overlay with all the equipped charms in Hollow Knight that can be used in OBS for streaming.
 
 # Requirements
-- Hollow Knight 1.4.3.2
-- Modding API 1.4.3.2-60
+- Hollow Knight 1.5.78
+- Modding API 1.5.78
 
 ## How to install
 
@@ -19,13 +19,16 @@ Unzip the [last release](https://github.com/carloslancha/all-charms-mod/releases
 - Enjoy
 
 ## How to customize the Overlay
-- You can customize the position, size and other styles by editing the [styles.css](https://github.com/carloslancha/all-charms-mod/blob/master/AllCharms/Resources/styles.html) file.
+- You can customize the position, size and other styles by editing the [styles.css](./AllCharms/Resources/styles.css) file.
 
 ## Preview
 
 ![image](https://user-images.githubusercontent.com/5803434/138606512-b9fc734d-69a2-49ec-8d60-5ab08283b1a0.png)
 
+## For Devs
+-	[Documentation for developers](./AllCharms/DEV.md)
+
 ## License
 
 GNU GPLv3 License © Carlos Lancha.<br/>
-www.twitch.tv/empaventuras
+[Twitch/Empaventuras](https://www.twitch.tv/empaventuras)
