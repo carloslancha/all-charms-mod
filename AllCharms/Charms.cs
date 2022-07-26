@@ -13,12 +13,13 @@ namespace Charms {
         }
         public void updateCharms(List<int> charmList) {
             try {
-                if(massageCharmList(charmList)) { WriteHtmlDataFile(); }
+                massageCharmList(charmList); 
+                WriteHtmlDataFile();
             } catch(Exception Ex) {
                 throw Ex;
             }
         }
-        private bool massageCharmList(List<int> charmList) {
+        private void massageCharmList(List<int> charmList) {
             List<int> newCharmList = new List<int>(charmList);
             int value = -1;
 
@@ -49,8 +50,6 @@ namespace Charms {
             } 
             
             this.equippedCharms = newCharmList;
-
-            return value != -1 ? true : false;
         }
         private void replaceCharmValue(List<int> charmList, int originalValue, int newValue) {
             if (originalValue != newValue) {
