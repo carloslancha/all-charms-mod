@@ -1,6 +1,5 @@
 ﻿using System;
 using Modding;
-using Charms;
 
 namespace AllCharms {
     public class AllCharms : Mod {
@@ -11,10 +10,10 @@ namespace AllCharms {
         }
         private void CharmUpdate(PlayerData pd, HeroController hc) {
             try {
-                Log(PlayerData.instance.equippedCharms);
-                Charms_.massageCharmList(PlayerData.instance.equippedCharms);
+                Log(pd.equippedCharms.Count.ToString());
+                Charms_.updateCharms(pd.equippedCharms);
             } catch(Exception Ex) {
-                Log(Ex.ToString());
+                Log("Exception: " + Ex.ToString());
             }
         }
         public override string GetVersion() => version;
