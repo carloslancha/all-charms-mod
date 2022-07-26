@@ -25,7 +25,10 @@ Unzip the [last release](https://github.com/carloslancha/all-charms-mod/releases
 
 ![image](https://user-images.githubusercontent.com/5803434/138606512-b9fc734d-69a2-49ec-8d60-5ab08283b1a0.png)
 
+## For Devs
+-	[Documentation for developers](./AllCharms/DEV.md)
+
 ## License
 
 GNU GPLv3 License © Carlos Lancha.<br/>
-www.twitch.tv/empaventuras
+[Twitch/Empaventuras](https://www.twitch.tv/empaventuras)

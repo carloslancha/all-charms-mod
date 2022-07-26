@@ -3,7 +3,7 @@ using Modding;
 
 namespace AllCharms {
     public class AllCharms : Mod {
-        private const string version = "Beta-1.5.78-Rev1";
+        private const string version = "1.5.78-Rev1";
         private Charms.Charms Charms_ = new Charms.Charms();
         public override void Initialize() {
             ModHooks.CharmUpdateHook += CharmUpdate;
